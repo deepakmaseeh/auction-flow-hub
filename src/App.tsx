@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Index from "./pages/Index";
 import AuctionBrowse from "./pages/AuctionBrowse";
+import AuctionDetail from "./pages/AuctionDetail";
+import Admin from "./pages/Admin";
+import Pricing from "./pages/Pricing";
+import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +24,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auctions" element={<AuctionBrowse />} />
+          <Route path="/auctions/:id" element={<AuctionDetail />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/support" element={<Support />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

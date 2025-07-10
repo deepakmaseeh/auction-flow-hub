@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 const Index = () => {
   const featuredAuctions = [
     {
+      id: 1,
       title: "Vintage Art Masterpiece",
       description: "Rare painting from the 1920s by acclaimed artist. Museum-quality piece with provenance.",
       currentBid: 12500,
@@ -27,6 +28,7 @@ const Index = () => {
       status: "live" as const
     },
     {
+      id: 2,
       title: "Diamond Engagement Ring",
       description: "Stunning 2-carat diamond ring in platinum setting. Certified and appraised.",
       currentBid: 8900,
@@ -36,6 +38,7 @@ const Index = () => {
       status: "live" as const
     },
     {
+      id: 3,
       title: "Classic Vintage Watch",
       description: "1960s Swiss-made timepiece in excellent condition. Fully serviced and authenticated.",
       currentBid: 3200,
