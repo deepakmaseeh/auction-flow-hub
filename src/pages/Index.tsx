@@ -59,7 +59,7 @@ const Index = () => {
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Modern Auction Platform
+            Rock My Auction Platform
             <br />for Every Organization
           </h1>
           
