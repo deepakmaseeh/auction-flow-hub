@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Gavel, Menu, User } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Header = () => {
   return (
@@ -27,6 +28,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
+          <ThemeToggle />
           <Button variant="ghost" size="sm" className="hidden md:flex">
             <User className="h-4 w-4 mr-2" />
             Login
